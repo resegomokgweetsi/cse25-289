@@ -24,7 +24,8 @@ nav{
   font-weight: bold;
 }
 .container{
-  margin-top: 10px;
+  max-width: 900px;
+  margin: 10px auto;
   paddings: 10px;
   border: 2px solid #ccc;
   border-radius: 8px;
