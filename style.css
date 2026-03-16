@@ -8,6 +8,28 @@ nav a{
   text-decoration: none;
   font-weight: bold;
 }
+body{
+  margin: 40px;
+  font-family: Arial, sans-serif;
+}
+nav{
+  background-color:#003366;
+  padding: 10px;
+  border: 2px solid black;
+}
+nav{
+  color:white;
+  margin-right: 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.container{
+  margin-top: 20px;
+  paddings: 20px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+}
+
 .feedback-page{
 
 background: linear-gradient(135deg,#0a0a0a,#1a1a1a);
