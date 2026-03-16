@@ -1,3 +1,13 @@
+nav{
+  background-color:#003366;
+  padding: 10px;
+}
+nav a{
+  color: white;
+  margin-right: 15px
+  text-decoration: none;
+  font-weight: bold;
+}
 .feedback-page{
 
 background: linear-gradient(135deg,#0a0a0a,#1a1a1a);
