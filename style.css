@@ -9,7 +9,7 @@ nav a{
   font-weight: bold;
 }
 body{
-  margin: 10px;
+  margin: 5px;
   font-family: Arial, sans-serif;
 }
 nav{
@@ -24,9 +24,9 @@ nav{
   font-weight: bold;
 }
 .container{
-  max-width: 900px;
-  margin: 10px auto;
-  paddings: 10px;
+  max-width: 90px;
+  margin: 5px auto;
+  paddings: 5px;
   border: 2px solid #ccc;
   border-radius: 8px;
 }
