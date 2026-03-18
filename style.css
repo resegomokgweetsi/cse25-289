@@ -184,69 +184,34 @@ color:#cce0ff;
 }
 .footer{
 
-background:#0d6efd;
+background:#87CEFA;   /* same as navbar */
 
 color:white;
+
+padding:15px;
 
 margin-top:40px;
 
-padding-top:20px;
+width:100%;
+
+border-top:2px solid #0d6efd;
 
 }
 
-.footer-container{
+.footer-content{
 
 display:flex;
 
-justify-content:space-around;
+justify-content:center;
 
-flex-wrap:wrap;
+gap:40px;
 
-padding:20px;
-
-}
-
-.footer-section{
-
-width:250px;
+font-weight:bold;
 
 }
 
-.footer-section h3,
-.footer-section h4{
+.footer p{
 
-margin-bottom:10px;
-
-}
-
-.footer-section p{
-
-margin:5px 0;
-
-}
-
-.footer-section a{
-
-color:white;
-
-text-decoration:none;
-
-}
-
-.footer-section a:hover{
-
-text-decoration:underline;
-
-}
-
-.footer-bottom{
-
-text-align:center;
-
-background:#0b5ed7;
-
-padding:10px;
-
-margin-top:10px;
+margin:0;
 
 }
