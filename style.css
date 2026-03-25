@@ -355,9 +355,19 @@ padding:40px;
 
 }
 
+.about-image{
+
+flex:1;
+
+}
+
 .about-image img{
 
-width:300px;
+width:100%;
+
+max-width:300px; 
+
+height:auto;
 
 border-radius:10px;
 
@@ -367,7 +377,7 @@ box-shadow:0 4px 10px rgba(0,0,0,0.2);
 
 .about-text{
 
-flex:1;
+flex:2; 
 
 background:white;
 
@@ -377,21 +387,7 @@ border-radius:10px;
 
 box-shadow:0 4px 10px rgba(0,0,0,0.1);
 
-}
-
-.about-text h2{
-
-color:#0b3d91;
-
-margin-bottom:15px;
-
-}
-
-.about-text p{
-
-line-height:1.6;
-
-font-size:16px;
+max-width:600px;
 
 }
 
