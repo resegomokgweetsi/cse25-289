@@ -6,7 +6,7 @@ justify-content:space-between;
 
 align-items:center;
 
-background:#87CEFA;   /* light blue */
+background:#87CEFA;   
 
 padding:15px;
 
@@ -32,7 +32,7 @@ height:50px;
 
 object-fit:cover;
 
-border-radius:50%;   /* makes logo circle */
+border-radius:50%;   
 
 border:2px solid white;
 
@@ -69,7 +69,7 @@ color:#003366;
 
 width:70%;
 
-margin-left:320px;   /* pushes container away from images */
+margin-left:320px;   
 
 margin-right:0.5cm;
 
@@ -197,7 +197,7 @@ color:#cce0ff;
 }
 .bank-footer{
 
-background:#1f6fd8;   /* professional bank blue */
+background:#1f6fd8;  
 
 color:white;
 
@@ -205,7 +205,7 @@ width:100%;
 
 padding:15px;
 
-position:fixed;   /* pins it */
+position:fixed;   
 
 bottom:0;
 
@@ -252,7 +252,7 @@ margin:0;
 
 font-family:Arial, sans-serif;
 
-padding-bottom:70px;   /* prevents overlap */
+padding-bottom:70px;   
 
 }
 .left-images{
@@ -267,7 +267,7 @@ display:flex;
 
 flex-direction:column;
 
-gap:30px;   /* space between images */
+gap:30px;   
 
 width:260px;
 
@@ -275,11 +275,11 @@ width:260px;
 
 .left-images img{
 
-width:240px;     /* fixed clean size */
+width:240px;    
 
-height:150px;    /* uniform height */
+height:150px;   
 
-object-fit:cover;   /* prevents stretching */
+object-fit:cover;  
 
 border-radius:12px;
 
@@ -343,5 +343,55 @@ transition:0.3s;
 transform:scale(1.05);
 
 }
+.about-section{
 
+display:flex;
+
+align-items:center;
+
+gap:40px;
+
+padding:40px;
+
+}
+
+.about-image img{
+
+width:300px;
+
+border-radius:10px;
+
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+
+}
+
+.about-text{
+
+flex:1;
+
+background:white;
+
+padding:30px;
+
+border-radius:10px;
+
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+
+}
+
+.about-text h2{
+
+color:#0b3d91;
+
+margin-bottom:15px;
+
+}
+
+.about-text p{
+
+line-height:1.6;
+
+font-size:16px;
+
+}
 
