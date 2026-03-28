@@ -138,7 +138,7 @@ resize:none;
 
 button{
 
-background:#white;
+background:white;
 color:white;
 border:none;
 padding:10px 20px;
@@ -149,6 +149,6 @@ cursor:pointer;
 
 button:hover{
 
-background:#0b5ed7;
+background:nwhite;
 
 }
