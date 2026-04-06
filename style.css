@@ -1,7 +1,9 @@
-.navbar{ display:flex; justify-content:space-between;
+.navbar {
+        display:flex; justify-content:space-between;
         align-items:center;
         background:#87CEFA; padding:15px; 
-        border-bottom:2px solid #0d6efd; } 
+        border-bottom:2px solid #0d6efd;
+       } 
 .nav-left{ 
   display:flex; 
   align-items:center; gap:10px; } 
@@ -72,24 +74,46 @@
              gap:60px; font-size:15px; } 
 .footer-info p{ margin:0; display:flex; 
                align-items:center; gap:8px; } 
-body{ margin:0; font-family:Arial, sans-serif; 
-     padding-bottom:70px; } 
-.left-images{ position:absolute; left:30px; top:160px; display:flex; flex-direction:column; gap:30px; width:260px; } 
-.left-images img{ width:240px; height:150px; object-fit:cover; border-radius:12px; box-shadow:0px 5px 15px rgba(0,0,0,0.25); 
-                 transition:0.3s; border:1px solid #ddd; } 
-.left-images img:hover{ transform:scale(1.04); box-shadow:0px 8px 20px rgba(0,0,0,0.35); } 
-.page-title{ text-align:center; padding:30px; } 
+body{ margin:0;
+     font-family:Arial, sans-serif; 
+     padding-bottom:70px;
+    } 
+.left-images{ position:absolute;
+             left:30px; top:160px;
+             display:flex;
+             flex-direction:column; 
+             gap:30px; 
+             width:260px; 
+            } 
+.left-images img{ width:240px;
+                 height:150px;
+                 object-fit:cover;
+                 border-radius:12px;
+                 box-shadow:0px 5px 15px rgba(0,0,0,0.25); 
+                 transition:0.3s;
+                 border:1px solid #ddd; 
+                } 
+.left-images img:hover{ 
+        transform:scale(1.04);
+        box-shadow:0px 8px 20px rgba(0,0,0,0.35); 
+} 
+.page-title{ text-align:center;
+            padding:30px; 
+           } 
 .services-container{ display:flex; 
                     flex-wrap:wrap; 
-                    justify-content:center; gap:25px; 
-                    padding:30px; } 
+                    justify-content:center;
+                    gap:25px; 
+                    padding:30px;
+                   } 
 .service-card{ width:250px; 
               background:white; 
               padding:20px; 
               border-radius:10px; 
               box-shadow:0 4px 8px rgba(0,0,0,0.2); 
               text-align:center; transition:0.3s; } 
-.service-card:hover{ transform:scale(1.05); } 
+.service-card:hover{ transform:scale(1.05); 
+                   } 
 .page-layout{
 
 display:flex;
@@ -149,33 +173,6 @@ cursor:pointer;
 
 button:hover{
 
-background:nwhite;
-
-}
-.contact-page {
-
-width:250px;
-background:white;
-padding:20px;
-border-radius:10px;
-box-shadow:0 4px 8px rgba(0,0,0,0.2);
-text-align:center;
-transition:0.3s;
-
-}
-
-.contact-page :hover{
-
-transform:scale(1.05);
-
-}
-
-.page-layout{
-
-display:flex;
-gap:40px;
-align-items:flex-start;
-padding:20px;
 background:white;
 
 }
