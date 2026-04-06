@@ -164,7 +164,7 @@ transition:0.3s;
 
 }
 
-.contact-page:hover{
+.contact-page :hover{
 
 transform:scale(1.05);
 
