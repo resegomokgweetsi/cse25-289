@@ -152,7 +152,7 @@ button:hover{
 background:nwhite;
 
 }
-.contact {
+.contact-page {
 
 width:250px;
 background:white;
@@ -164,7 +164,7 @@ transition:0.3s;
 
 }
 
-.contact:hover{
+.contact-page:hover{
 
 transform:scale(1.05);
 
