@@ -224,9 +224,6 @@ height:120px;
 }
 
 .contact-container button{
-
-background:white;
-color:white;
 padding:12px;
 border:none;
 border-radius:5px;
@@ -234,8 +231,4 @@ cursor:pointer;
 
 }
 
-.contact-container button:hover{
 
-background:white;
-
-}
