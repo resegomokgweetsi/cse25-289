@@ -111,17 +111,23 @@ Send
 </div>
 
 </div>
-     <script>
+  <script>
 
 function sendMessage(){
 
-let name = document.querySelector("input").value;
+let name = document.getElementById("name").value;
 
-if(name == ""){
+let email = document.getElementById("email").value;
 
-alert("Please enter your name");
+let message = document.getElementById("message").value;
 
-}else{
+if(name=="" || email=="" || message==""){
+
+alert("Please complete the form");
+
+}
+
+else{
 
 alert("Thank you for contacting Futures Bank");
 
