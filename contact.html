@@ -101,7 +101,17 @@ We are here to help you with all your banking needs.
 
 function sendMessage(){
 
-alert("Message sent successfully!");
+let name = document.querySelector("input").value;
+
+if(name == ""){
+
+alert("Please enter your name");
+
+}else{
+
+alert("Thank you for contacting Futures Bank");
+
+}
 
 }
 
