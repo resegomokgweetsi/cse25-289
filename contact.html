@@ -83,18 +83,21 @@ We are here to help you with all your banking needs.
 <form>
 
 <label>Full Name</label>
-<input type="text" class="form-control">
- 
+<input type="text" id="name" class="form-control">
+
 <label>Email</label>
-<input type="email" class="form-control">
+<input type="email" id="email" class="form-control">
 
 <label>Message</label>
-<textarea class="form-control"></textarea>
- 
-<button type="Send"
+<textarea id="message" class="form-control"></textarea>
+
+<br>
+
+<button type="button"
+onclick="sendMessage()"
 class="btn btn-primary w-100">
 
-Send
+Send Message
 
 </button>
 
