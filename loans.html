@@ -152,23 +152,26 @@ records qualify for lower rates.
 Use our calculator to estimate your loan repayment amount.
 </p>
 
-<label>Loan Amount (Pula)</label>
+<h2>Loan Calculator</h2>
+
+<label>Loan Amount</label>
 <input type="number" id="amount" class="form-control">
 
 <label>Interest Rate (%)</label>
 <input type="number" id="interest" class="form-control">
 
-<label>Loan Period (Years)</label>
+<label>Years</label>
 <input type="number" id="years" class="form-control">
 
 <br>
 
-<button onclick="calculateLoan()">
+<button onclick="calculateLoan()" class="btn btn-primary">
 Calculate Loan
 </button>
 
-<h8> id="result"></h8>
-
+<div class="result-box">
+<h4>Loan Results</h4>
+<p id="result"></p>
 </div>
 
 </div>
