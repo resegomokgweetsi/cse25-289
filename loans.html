@@ -177,32 +177,36 @@ Calculate Loan
 </div>
 
 </div> 
-     <script>
+    <script>
 
 function calculateLoan(){
 
 let amount = document.getElementById("amount").value;
-
 let interest = document.getElementById("interest").value;
-
 let years = document.getElementById("years").value;
 
+// Convert to numbers
+amount = parseFloat(amount);
+interest = parseFloat(interest);
+years = parseFloat(years);
 
+// Validation
+if(isNaN(amount) || isNaN(interest) || isNaN(years)){
+document.getElementById("result").innerHTML =
+"Please enter all values correctly";
+return;
+}
+
+// Calculations
 let totalInterest = (amount * interest * years) / 100;
+let totalPayment = amount + totalInterest;
 
-let totalPayment = parseInt(amount) + totalInterest;
-  
-<button onclick="calculateLoan()">
-Calculate Loan
-</button>
+// Display result
+document.getElementById("result").innerHTML =
+"Total Interest: P" + totalInterest.toFixed(2) + "<br>" +
+"Total Payment: P" + totalPayment.toFixed(2);
 
-<div class="result-box">
-
-<h9>Loan Results</h9>
-
-<p id="result"></p>
-
-</div>
+}
 
 </script>
     <footer class="bank-footer">
