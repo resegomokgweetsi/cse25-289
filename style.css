@@ -189,6 +189,64 @@ border-left:5px solid #0d6efd;
 border-radius:8px;
 }
 
+/* Login page background */
+.login-page{
+background:#f4f7fc;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+font-family:Arial, sans-serif;
+}
+
+/* Login box */
+.login-container{
+background:white;
+padding:35px;
+width:350px;
+border-radius:12px;
+box-shadow:0 6px 20px rgba(0,0,0,0.15);
+text-align:center;
+}
+
+/* Heading */
+.login-container h2{
+margin-bottom:20px;
+color:#0d6efd;
+}
+
+/* Inputs */
+.login-container input{
+width:100%;
+padding:12px;
+margin-bottom:15px;
+border:1px solid #ccc;
+border-radius:6px;
+font-size:14px;
+}
+
+/* Button */
+.login-container button{
+width:100%;
+padding:12px;
+background:#0d6efd;
+color:white;
+border:none;
+border-radius:6px;
+font-size:16px;
+cursor:pointer;
+}
+
+.login-container button:hover{
+background:#0b5ed7;
+}
+
+/* Error */
+#error{
+margin-top:10px;
+color:red;
+font-size:14px;
+}
 
 
 
