@@ -3,54 +3,80 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Login - Futures Bank</title>
-
+<title>Futures Bank Login</title>
 <link rel="stylesheet" href="style.css">
-
-
-
 </head>
 
-<body>
+<body class="login-page">
 
 <div class="login-container">
 
-<h2>Futures Bank Login</h2>
+    <!-- LOGIN FORM -->
+    <div id="loginForm">
+        <h2>Futures Bank Login</h2>
 
-<input type="text" id="username" placeholder="Enter Username">
+        <input type="text" id="username" placeholder="Enter Username">
+        <input type="password" id="password" placeholder="Enter Password">
 
-<input type="password" id="password" placeholder="Enter Password">
+        <button onclick="login()">Login</button>
 
-<button onclick="login()">Login</button>
+        <p id="error"></p>
 
-<p id="error"></p>
+        <p class="switch">
+            Don't have an account?
+            <span onclick="showSignup()">Sign Up</span>
+        </p>
+    </div>
+
+    <!-- SIGN UP FORM -->
+    <div id="signupForm" style="display:none;">
+        <h2>Create Account</h2>
+
+        <input type="text" placeholder="First Name">
+        <input type="text" placeholder="Last Name">
+        <input type="email" placeholder="Email">
+        <input type="text" placeholder="Phone Number">
+        <input type="password" placeholder="Password">
+        <input type="password" placeholder="Confirm Password">
+
+        <button onclick="signup()">Sign Up</button>
+
+        <p class="switch">
+            Already have an account?
+            <span onclick="showLogin()">Login</span>
+        </p>
+    </div>
 
 </div>
 
 <script>
-
 function login(){
+    let username = document.getElementById("username").value;
+    let password = document.getElementById("password").value;
 
-let username = document.getElementById("username").value;
-let password = document.getElementById("password").value;
-
-// SIMPLE LOGIN (demo)
-if(username === "admin" && password === "1234"){
-
-alert("Login successful");
-
-// Redirect to home page
-window.location.href = "index.html";
-
-}
-else{
-document.getElementById("error").innerHTML = "Invalid username or password";
+    if(username === "admin" && password === "1234"){
+        window.location.href = "index.html";
+    }else{
+        document.getElementById("error").innerHTML =
+        "Invalid username or password";
+    }
 }
 
+function showSignup(){
+    document.getElementById("loginForm").style.display = "none";
+    document.getElementById("signupForm").style.display = "block";
 }
 
+function showLogin(){
+    document.getElementById("signupForm").style.display = "none";
+    document.getElementById("loginForm").style.display = "block";
+}
+
+function signup(){
+    alert("Account created successfully!");
+    showLogin();
+}
 </script>
 
 </body>
-</html></html>
+</html>
