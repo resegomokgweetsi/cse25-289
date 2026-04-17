@@ -264,16 +264,16 @@ filter:brightness(40%); /* makes it dim */
 /* animation */
 @keyframes slideBg{
 0%{
-background-image:url('images/bg1.jpg');
+background-image:url('bg1.webp');
 }
 33%{
-background-image:url('images/bg2.jpg');
+background-image:url('bg2.avif');
 }
 66%{
-background-image:url('images/bg3.jpg');
+background-image:url('bg3.jpg');
 }
 100%{
-background-image:url('images/bg1.jpg');
+background-image:url('bg4.jpg');
 }
 }
 
