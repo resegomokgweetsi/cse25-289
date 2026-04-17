@@ -1,1 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login - Futures Bank</title>
+<link rel="stylesheet" href="style.css">
+</head>
 
+<body class="login-page">
+
+<div class="login-container">
+    <h2>Futures Bank Login</h2>
+
+    <input type="text" id="username" placeholder="Username">
+
+    <input type="password" id="password" placeholder="Password">
+
+    <button onclick="login()">Login</button>
+
+    <p id="error"></p>
+</div>
+
+<script>
+function login(){
+    let username = document.getElementById("username").value;
+    let password = document.getElementById("password").value;
+
+    if(username === "admin" && password === "1234"){
+        window.location.href = "index.html";
+    }else{
+        document.getElementById("error").innerHTML =
+        "Invalid username or password";
+    }
+}
+</script>
+
+</body>
+</html>
