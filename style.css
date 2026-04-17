@@ -174,10 +174,7 @@ display:flex;
 gap:40px;
 align-items:flex-start;
 padding:20px;
-background:white;
-}
-
-
+background:transparent;
 }
 .result-box{
 margin-top:20px;
