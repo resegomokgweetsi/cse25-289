@@ -20,12 +20,14 @@
   font-weight:bold; 
   font-size:16px; } 
 .nav-links a:hover{ color:#003366; } 
-.container{
-background:rgba(255,255,255,0.95);
-backdrop-filter:blur(5px);
-padding:40px;
-border-radius:15px;
-}
+.container{ 
+  width:70%; 
+  margin-left:320px; 
+  margin-right:0.5cm; 
+  margin-top:30px; 
+  padding:25px; border:2px solid #ccc; 
+  border-radius:10px; background:white; } 
+
   background: linear-gradient(135deg,#0a0a0a,#1a1a1a); 
   font-family: Arial, sans-serif; color:white; } 
 .feedback-page .container{ 
