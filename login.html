@@ -3,41 +3,54 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Login - Futures Bank</title>
+
 <link rel="stylesheet" href="style.css">
+
+
+
 </head>
 
-<body class="login-page">
+<body>
 
 <div class="login-container">
-    <h2>Futures Bank Login</h2>
 
-    <input type="text" id="username" placeholder="Username">
+<h2>Futures Bank Login</h2>
 
-    <input type="password" id="password" placeholder="Password">
+<input type="text" id="username" placeholder="Enter Username">
 
-    <button onclick="login()">Login</button>
+<input type="password" id="password" placeholder="Enter Password">
 
-    <p id="error"></p>
+<button onclick="login()">Login</button>
+
+<p id="error"></p>
+
 </div>
 
 <script>
+
 function login(){
 
-    alert("Working"); // test
+let username = document.getElementById("username").value;
+let password = document.getElementById("password").value;
 
-    let username = document.getElementById("username").value;
-    let password = document.getElementById("password").value;
+// SIMPLE LOGIN (demo)
+if(username === "admin" && password === "1234"){
 
-    if(username === "admin" && password === "1234"){
-        window.location.href = "index.html";
-    }else{
-        document.getElementById("error").innerHTML =
-        "Invalid username or password";
-    }
+alert("Login successful");
+
+// Redirect to home page
+window.location.href = "index.html";
 
 }
+else{
+document.getElementById("error").innerHTML = "Invalid username or password";
+}
+
+}
+
 </script>
 
 </body>
-</html>
+</html></html>
