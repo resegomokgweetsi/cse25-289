@@ -31,13 +31,12 @@
     <div id="signupForm" style="display:none;">
         <h2>Create Account</h2>
 
-        <input type="text" placeholder="First Name">
-        <input type="text" placeholder="Last Name">
-        <input type="email" placeholder="Email">
-        <input type="text" placeholder="Phone Number">
-        <input type="password" placeholder="Password">
-        <input type="password" placeholder="Confirm Password">
-
+<input type="text" id="firstName" placeholder="First Name">
+<input type="text" id="lastName" placeholder="Last Name">
+<input type="email" id="signupEmail" placeholder="Email">
+<input type="text" id="phone" placeholder="Phone Number">
+<input type="password" id="signupPassword" placeholder="Password">
+<input type="password" id="confirmPassword" placeholder="Confirm Password">
         <button onclick="signup()">Sign Up</button>
 
         <p class="switch">
@@ -50,15 +49,20 @@
 
 <script>
 function login(){
-    let username = document.getElementById("username").value;
-    let password = document.getElementById("password").value;
 
-    if(username === "admin" && password === "1234"){
-        window.location.href = "index.html";
-    }else{
-        document.getElementById("error").innerHTML =
-        "Invalid username or password";
-    }
+let username = document.getElementById("username").value;
+let password = document.getElementById("password").value;
+
+let storedUser = localStorage.getItem("username");
+let storedPass = localStorage.getItem("password");
+
+if(username === storedUser && password === storedPass){
+    alert("Login successful");
+    window.location.href = "index.html";
+}else{
+    document.getElementById("error").innerHTML =
+    "Invalid username or password";
+}
 }
 
 function showSignup(){
@@ -72,8 +76,31 @@ function showLogin(){
 }
 
 function signup(){
-    alert("Account created successfully!");
-    showLogin();
+
+let firstName = document.getElementById("firstName").value;
+let lastName = document.getElementById("lastName").value;
+let email = document.getElementById("signupEmail").value;
+let password = document.getElementById("signupPassword").value;
+let confirmPassword = document.getElementById("confirmPassword").value;
+
+if(firstName=="" || lastName=="" || email=="" || password==""){
+    alert("Please fill all fields");
+    return;
+}
+
+if(password !== confirmPassword){
+    alert("Passwords do not match");
+    return;
+}
+
+let username = email;
+
+localStorage.setItem("username", username);
+localStorage.setItem("password", password);
+
+alert("Signup successful! Your username is: " + username);
+
+showLogin();
 }
 </script>
 
