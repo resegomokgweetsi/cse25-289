@@ -48,16 +48,27 @@
 </div>
 
 <script>
+
 function login(){
 
-let username = document.getElementById("username").value;
-let password = document.getElementById("password").value;
+let username = document.getElementById("username").value.trim();
+let password = document.getElementById("password").value.trim();
 
 let storedUser = localStorage.getItem("username");
 let storedPass = localStorage.getItem("password");
 
+if(!storedUser){
+    document.getElementById("error").innerHTML =
+    "No account found. Please sign up first.";
+    return;
+}
+
 if(username === storedUser && password === storedPass){
     alert("Login successful");
+
+
+    localStorage.setItem("loggedIn", "true");
+
     window.location.href = "index.html";
 }else{
     document.getElementById("error").innerHTML =
@@ -65,23 +76,25 @@ if(username === storedUser && password === storedPass){
 }
 }
 
+
 function showSignup(){
-    document.getElementById("loginForm").style.display = "none";
-    document.getElementById("signupForm").style.display = "block";
+document.getElementById("loginForm").style.display = "none";
+document.getElementById("signupForm").style.display = "block";
 }
 
 function showLogin(){
-    document.getElementById("signupForm").style.display = "none";
-    document.getElementById("loginForm").style.display = "block";
+document.getElementById("signupForm").style.display = "none";
+document.getElementById("loginForm").style.display = "block";
 }
+
 
 function signup(){
 
-let firstName = document.getElementById("firstName").value;
-let lastName = document.getElementById("lastName").value;
-let email = document.getElementById("signupEmail").value;
-let password = document.getElementById("signupPassword").value;
-let confirmPassword = document.getElementById("confirmPassword").value;
+let firstName = document.getElementById("firstName").value.trim();
+let lastName = document.getElementById("lastName").value.trim();
+let email = document.getElementById("signupEmail").value.trim();
+let password = document.getElementById("signupPassword").value.trim();
+let confirmPassword = document.getElementById("confirmPassword").value.trim();
 
 if(firstName=="" || lastName=="" || email=="" || password==""){
     alert("Please fill all fields");
@@ -90,6 +103,11 @@ if(firstName=="" || lastName=="" || email=="" || password==""){
 
 if(password !== confirmPassword){
     alert("Passwords do not match");
+    return;
+}
+
+if(password.length < 4){
+    alert("Password must be at least 4 characters");
     return;
 }
 
@@ -102,6 +120,7 @@ alert("Signup successful! Your username is: " + username);
 
 showLogin();
 }
+
 </script>
 
 </body>
